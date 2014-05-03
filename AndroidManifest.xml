@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="king.muchbeer.vodacomappstar"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="king.muchbeer.vodacomappstar.user.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <!--  Login Activity -->
+        <activity
+            android:label="Login Account" 
+            android:name=".LoginActivity"></activity>
+
+        <!--  Register Activity -->
+        <activity
+            android:label="Register New Account" 
+            android:name=".RegisterActivity"></activity>
+        
+        <activity
+            android:name="king.muchbeer.vodacomappstar.user.MainScreenActivity"
+            android:label="Main Item" >
+        </activity>
+        
+          <!-- All Product Activity -->
+        <activity
+            android:name="king.muchbeer.vodacomappstar.user.AllProductsActivity"
+            android:label="Items available" >
+        </activity>
+        
+           <!-- All Electronics Activity -->
+        <activity
+            android:name="king.muchbeer.vodacomappstar.user.AllElectronicsActivity"
+            android:label="Electronics Available" >
+        </activity>
+
+        <!-- Add Product Activity -->
+        <activity
+            android:name="king.muchbeer.vodacomappstar.user.NewProductActivity"
+            android:label="Add New Item" >
+        </activity>
+        
+       
+
+        <!-- Edit Product Activity -->
+        <activity
+            android:name="king.muchbeer.vodacomappstar.user.EditProductActivity"
+            android:label="Edit Item" >
+        </activity>
+        
+           <!-- Edit Electronics Activity -->
+        <activity
+            android:name="king.muchbeer.vodacomappstar.user.NewElectronicsActivity"
+            android:label="New Electronics" >
+        </activity>
+        
+        <!-- Search Product Activity -->
+        <activity
+            android:name="king.muchbeer.vodacomappstar.search.MainSearchActivity"
+            android:label="Search Item" >
+        </activity>
+        
+           <!-- Search Product Activity -->
+        <activity
+            android:name="king.muchbeer.vodacomappstar.search.SearchResultActivity"
+            android:label="View Search Item" >
+        </activity>
+        
+         <!-- Main Login Product Activity -->
+        <activity
+            android:name="king.muchbeer.vodacomappstar.login.MainLoginActivity"
+            android:label="Login to Add Item" >
+        </activity>
+        
+          <!-- Main Category Activity -->
+        <activity
+            android:name="king.muchbeer.vodacomappstar.login.MainCategoryActivity"
+            android:label="Category Choosing" >
+        </activity>
+        
+           <!-- Main Category Activity -->
+        <activity
+            android:name="king.muchbeer.vodacomappstar.user.ViewCategoryActivity"
+            android:label="Category Choosing" >
+        </activity>
+        
+    </application>
+
+     <!-- Allow to connect with internet -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+ 
+    
+</manifest>

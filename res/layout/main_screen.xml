@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    
+    
+    <!-- Spinner Element -->
+    <Spinner 
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinner_title2"
+        
+    />
+    <!-- Sample Dashboard screen with Two buttons -->
+
+
+    <Button
+        android:id="@+id/btnCreateProduct"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:text="Add Products" />
+    
+     <Button
+        android:id="@+id/btnSearchProduct"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:text="Search Products" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dip"
+        android:text="This application helps Individual Tanzanian advertise their Item for free using mobile, the product entered will be available to all mobile users with these application and also online using our website.
+        http://aac2014-tzmarketplace.appspot.com/" />
+
+</LinearLayout>
